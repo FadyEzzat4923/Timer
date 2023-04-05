@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <style>
+        .body {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            width: 100%;
+            height: 50vh;
+        }
+
+        .time {
+            background-color: rgb(8, 6, 8);
+            width: 150px;
+            line-height: 30px;
+            height: 30px;
+            color: aliceblue;
+            border-radius: 10px;
+            margin-left: 10px;
+            display: flex;
+            flex-flow: row wrap;
+            border: 1px solid rgba(0, 0, 0, 0.829);
+            box-shadow: 0px 2px 2px 3px rgba(0, 0, 0, 0.856);
+            justify-content: space-around;
+            align-content: center;
+        }
+
+        .time span:nth-child(1),
+        span:nth-child(3),
+        span:nth-child(5) {
+            width: 25px;
+            text-align: center;
+        }
+
+        .big-btn {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            width: 200px;
+            margin-left: -30px;
+            margin-top: 10px;
+        }
+
+        button {
+            border: 0;
+            background-color: black;
+            box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.774);
+            color: aliceblue;
+            padding: 10px;
+            border-radius: 10px;
+            transition: 0.1s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        button:focus {
+            color: red;
+            transform: scale(0.95);
+        }
+
+        .timer {
+            border: 10px solid black;
+            box-shadow: inset 0px 0px 4px 4px rgb(73, 73, 73);
+            border-radius: 40px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-around;
+            align-content: center;
+            height: 40vh;
+            width: 30%;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <div class="timer">
+            <h1>Timer</h1>
+            <div class="time">
+                <span class="m"></span><span class="sign2">:</span>
+                <span class="s"></span><span class="sign3">:</span>
+                <span class="mil"></span>
+            </div>
+            <br>
+            <div class="big-btn"><button class="btn"> Stop</button><span><button class="btn-go">Go</button></span>
+                <span><button class="btn-reset">Reset</button></span>
+            </div>
+        </div>
+    </div>
+    <script src="file.js"></script>
+</body>
+
+</html>
