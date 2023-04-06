@@ -24,7 +24,7 @@ mil.innerHTML = 0 ;
 // let num = setInterval(fady, 10);
 function fady(){
     mil.innerHTML++;
-if(mil.innerHTML === "60"){
+if(mil.innerHTML === "100"){
 mil.innerHTML = 0 ; 
 }
 }
